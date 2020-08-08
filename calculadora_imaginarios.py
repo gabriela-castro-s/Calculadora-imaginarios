@@ -1,5 +1,5 @@
 # Gabriela Castro Santamaria
-# Librería numeros imaginarios
+# Libreria numeros imaginarios
 # CNYT
 
 import math
@@ -28,13 +28,9 @@ def mult (num1, num2):
 def div (num1, num2):
     """Funcion que divide dos numeros imaginarios, los numeros deben ser parejas ordenadas
     (list 1D, list 1D) -> list 1D"""
-    num1 = polar(num1)
-    num2 = polar(num2)
-    ans = [0.0, 0.0]
-    ans[0] = num1[0]/num2[0]
-    ans[1] = num1[1] - num2[1]
-    ans = polarc(ans)
-    return (ans[0], ans[1])
+    ans1 = (num1[0]*num2[0] + num1[1]*num2[1])/(num2[0]**2 + num2[1]**2)
+    ans2 = (num1[1]*num2[0] + num1[0]*num2[1])/(num2[0]**2 + num2[1]**2)
+    return (ans1, ans2)
 
 def modulo (num):
     """Funcion que regresa el modulo de un numero imaginario
