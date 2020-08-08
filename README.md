@@ -14,14 +14,9 @@ Libreria para una calculadora de numeros imaginarios. Realiza las siguientes ope
 
 Para poder previsualizar el archivo, puede utilizar cualquier editor de phyton y copiar el texto del archivo [calculadora_imaginarios](https://github.com/gabriela-castro-s/Calculadora-imaginarios/blob/master/calculadora_imaginarios.py)
 
-### Pre-requisitos 📋
+## Pre-requisitos 📋
 
 La libreria fue escrita en PyCharm, por lo que cualquier editor de phyton puede abrir la librería.
-
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
 
 ## Construido con 🛠️
 
