@@ -12,7 +12,7 @@ Libreria para una calculadora de numeros imaginarios. Realiza las siguientes ope
 
 ## Comenzando 🚀
 
-Para poder previsualizar el archivo, puede utilizar cualquier editor de phytn y copiar el texto del archivo [calculadora-imaginarios] (https://github.com/gabriela-castro-s/Calculadora-imaginarios/blob/master/calculadora_imaginarios.py)
+Para poder previsualizar el archivo, puede utilizar cualquier editor de phytn y copiar el texto del archivo [calculadora-imaginarios](https://github.com/gabriela-castro-s/Calculadora-imaginarios/blob/master/calculadora_imaginarios.py)
 
 ### Pre-requisitos 📋
 
