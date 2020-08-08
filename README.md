@@ -1,4 +1,4 @@
-# Calculadora-imaginarios ![alt text](https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/pocket-calculator_1f5a9.png)
+# Calculadora-imaginarios 💡
 Libreria para una calculadora de numeros imaginarios. Realiza las siguientes operaciones:
 
 - Suma
@@ -12,7 +12,7 @@ Libreria para una calculadora de numeros imaginarios. Realiza las siguientes ope
 
 ## Comenzando 🚀
 
-Para poder previsualizar el archivo, puede utilizar cualquier editor de phytn y copiar el texto del archivo [calculadora-imaginarios](https://github.com/gabriela-castro-s/Calculadora-imaginarios/blob/master/calculadora_imaginarios.py)
+Para poder previsualizar el archivo, puede utilizar cualquier editor de phyton y copiar el texto del archivo [calculadora_imaginarios](https://github.com/gabriela-castro-s/Calculadora-imaginarios/blob/master/calculadora_imaginarios.py)
 
 ### Pre-requisitos 📋
 
