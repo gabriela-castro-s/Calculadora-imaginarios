@@ -1,55 +1,24 @@
-# Calculadora-imaginarios
+# Calculadora-imaginarios ![alt text](https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/pocket-calculator_1f5a9.png)
+Libreria para una calculadora de numeros imaginarios. Realiza las siguientes operaciones:
 
-Libreria para una calculadora de numeros imaginarios.
+- Suma
+- Producto
+- Resta
+- División
+- Módulo
+- Conjugado
+- Conversión entre representaciones polar y cartesiano
+- Retornar la fase de un número complejo
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
+Para poder previsualizar el archivo, puede utilizar cualquier editor de phytn y copiar el texto del archivo [calculadora_imaginarios] (https://github.com/gabriela-castro-s/Calculadora-imaginarios/blob/master/calculadora_imaginarios.py).
 
 
 ### Pre-requisitos 📋
 
-La librería está en un archivo .py, por lo que es necesario un programa capaz de leer este tipo de archivos.
+La libreria fue escrita en PyCharm, por lo que cualquier editor de phyton puede abrir la librería.
 
-### Instalación 🔧
-
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-Para ejecutar las pruebas, debemos 
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
 
 ## Despliegue 📦
 
@@ -57,11 +26,9 @@ _Agrega notas adicionales sobre como hacer deploy_
 
 ## Construido con 🛠️
 
-PyCharm
+PyCharm 2020.2 (Community Edition)
 
 ## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
 * **Gabriela Castro Santamaría** - *Trabajo Inicial* - [gabriela-castro-s](https://github.com/gabriela-castro-s) 
 
