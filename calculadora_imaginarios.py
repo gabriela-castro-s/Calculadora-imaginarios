@@ -42,7 +42,7 @@ def polar(num):
     """Funcion que convierte un numero imaginario a su forma polar
     (list 1D) -> list 1D"""
     ans1 = modulo(num)
-    ans2 = math.atan(num[1]/num[0])
+    ans2 = math.atan2(num[1], num[0])
     return (ans1, ans2)
 
 def polarc (num):
@@ -55,6 +55,6 @@ def polarc (num):
 def conjugado (num):
     """Funcion que retorna el conjugado de un numero imaginario
     (list 1D) -> list 1D"""
-    num[1] = num[1]*-1
+    num[1] = num[1] * -1
     return (num[0], num[1])
 
