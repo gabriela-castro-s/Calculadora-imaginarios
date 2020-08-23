@@ -55,6 +55,210 @@ def polarc (num):
 def conjugado (num):
     """Funcion que retorna el conjugado de un numero imaginario
     (list 1D) -> list 1D"""
-    num[1] = num[1] * -1
-    return (num[0], num[1])
+    num1 = num[1] * -1
+    return (num[0], num1)
 
+#----------------------------------Calculadora de matrices y vectores imaginarios--------------------------------------
+
+def sumav (v1, v2):
+    """Funcion que suma dos vectores
+    (list 1D, list 1D) -> list 1D"""
+    ans = []
+    for i in range(len(v1)):
+        a = suma(v1[i], v2[i])
+        ans.append(a)
+    return ans
+
+def inversoaditivo (v1):
+    """Funcion que halla el inverso aditivo de un vector
+    (list 1D) -> list 1D"""
+    ans = []
+    for i in range(len(v1)):
+        ans.append((v1[i][0] * (-1), v1[i][1]*(-1)))
+    return ans
+
+def multescalarvector (num1, v1):
+    """Funcion que realiza la multiplicacion escalar entre un numero imaginario y un vector
+    (list 1D, list 1D) -> list 1D"""
+    ans = []
+    for i in range(len(v1)):
+        ans.append(mult(num1, v1[i]))
+    return ans
+
+def multescalarmatrices(num1,m1):
+    """Funcion que realiza la multiplicacion escalar entre un numero imaginario y una matriz
+    (list 1D, list 2D) -> list 2D"""
+    ans = []
+    for i in range(len(m1)):
+        ans.append(multescalarvector(num1, m1[i]))
+    return ans
+
+def matriztranspuesta(m1):
+    """Funcion que convierte una matriz en su forma transpuesta
+    (list 2D) -> list 2D"""
+    ans = []
+    for j in range(len(m1[0])):
+        ans.append([])
+        for i in range(len(m1)):
+            num1 = m1[i][j]
+            ans[j].append(num1)
+    return(ans)
+
+def matrizconjugada(m1):
+    """Funcion que convierte una matriz en su forma conjugada
+    (list 2D) -> list 2D"""
+    ans = []
+    for i in range(len(m1)):
+        bandera = []
+        ans.append(bandera)
+        for j in range(len(m1[i])):
+            bandera.append([])
+    for i in range(len(m1)):
+        for j in range(len(m1[0])):
+            ans[i][j] = conjugado(m1[i][j])
+    return ans
+
+def adjmatriz(m1):
+    """Funcion que convierte una matriz a su forma adjunta o daga
+    (list 2D) -> list 2D"""
+    return matrizconjugada(matriztranspuesta(m1))
+
+def multivector(v1, v2):
+    """Funcion que multiplica dos vectores, el proposito de esta funcion es facilitar la funcion multimatriz
+    (list 1D) -> list 1D"""
+    ans = []
+    for i in range(len(v1)):
+        ans.append(mult(v1[i], v2[i]))
+    while len(ans) > 1:
+        ans[0] = suma(ans[0], ans[-1])
+        ans.pop()
+    return ans[0]
+
+def multimatriz(v1, v2):
+    """Funcion que multiplica dos matrices
+    (list 2D) -> list 2D"""
+    error = 'ERROR, LAS MATRICES NO TIENEN TAMAÑO COMPATIBLE'
+    if len(v1[0]) != len(v2):
+        return error
+    else:
+        ans = []
+        for i in range(len(v1)):
+            bandera = []
+            ans.append(bandera)
+            for j in range(len(v2[0])):
+                bandera.append([])
+        v3 = matriztranspuesta(v2)
+        for k in range(len(v1)):
+            for m in range(len(v3)):
+                ans[k][m] = multivector(v1[k], v3[m])
+        return ans
+
+def sumacompvector(v1):
+    """Funcion que suma los componentes de un vector, el proposito de esta funcion es facilitar la funcion accionmatrizvector
+        (list 1D) -> list 1D"""
+    if len(v1) < 2:
+        return v1[0]
+    elif len(v1) == 2:
+        ans = suma(v1[0], v1[1])
+        return ans
+    else:
+        ans = suma(v1[0], v1[1])
+        for i in range(2, len(v1)):
+            ans = suma(ans, v1[i])
+        return ans
+
+def accionmatrizvector(m1, v1):
+    """Funcion que realiza la accion de un vector sobre una matriz
+    (list 2D, list 1D) -> list 1D"""
+    v2 = []
+    v3 = []
+    for i in range(len(m1)):
+        v2.append([])
+        for j in range(len(m1)):
+            v2[i].append(mult(m1[i][j], v1[j]))
+    for i in range(len(v2)):
+        v3.append(sumacompvector(v2[i]))
+    return v3
+
+def innervector(v1,v2):
+    """Funcion que calcula el producto interno entre dos vectores
+    (list 1D, list 1D) -> list 1D"""
+    ans = mult(v1[0], v2[0])
+    for i in range(1, len(v1)):
+        ans = suma(ans, mult(v1[i], v2[i]))
+    return ans
+
+def norma(v1):
+    """Funcion que calcula la norma de un vector
+    (list 1D) -> int"""
+    suma = 0
+    for i in range(len(v1)):
+        suma += (v1[i][0]**2)+(v1[i][1]**2)
+    ans = math.sqrt(suma)
+    return ans
+
+def distancia (v1,v2):
+    """Funcion que calcula la distancia entre dos vectores
+    (list 1D, list 1D) -> int"""
+    ans = 0
+    for i in range (len(v1)):
+        v = resta(v1[i],v2[i])
+        ans += v[0] **2 + v[1]**2
+    c = ans ** 0.5
+    return c
+
+
+def identidadmatriz(filas, columnas):
+    """Funcion que realiza la matriz identidad para determinado numero de filas y columnas, el proposito de esta funcion es ayudar all desarrollo de isUnitaria
+    (int, int) -> list 2D"""
+    c = []
+    for i in range(filas):
+        fila = []
+        for j in range(columnas):
+            val = 1 if i == j else 0
+            fila.append(val)
+        c.append(fila)
+    return (c)
+
+def isUnitaria(m1):
+    """Funcion que define si una matriz es unitaria o no
+    (list 2D) -> Boolean"""
+    if len(m1) == len(m1[0]):
+        m1 = multimatriz(m1, matriztranspuesta(m1))
+        iden = identidadmatriz(len(m1), len(m1[0]))
+        if m1 == iden:
+            return True
+        else:
+            return False
+        return False
+
+def isHermitiana(m1):
+    """Funcion que define si una matriz es hermitiana o no
+    (list 2D) -> Boolean"""
+    if m1 == adjmatriz(m1):
+        return True
+    else:
+        return False
+
+def productotensor(m1, m2):
+    """Funcion que realiza el producto tensor entre dos matrices
+    (list 2D, list 2D) -> list 2D"""
+    ans = []
+    pj = 0
+    for pi in range((len(m1) - 1) * 2):
+        f1 = m1[pi]
+        f2 = m2[pj]
+        f = []
+        for i in f1:
+            for j in f2:
+                f.append(mult(i, j))
+        pj += 1
+        f2 = m2[pj]
+        ans.append(f)
+        f = []
+        for i in f1:
+            for j in f2:
+                f.append(mult(i, j))
+        pj -= 1
+        ans.append(f)
+    return ans
