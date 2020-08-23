@@ -34,7 +34,7 @@ Para poder previsualizar el archivo, puede utilizar cualquier editor de phyton, 
 
 - Abrimos PyCharm y creamos un nuevo archivo
 
-![Optional Text](../master/Desktop/img1.png)
+![alt text](https://github.com/gabriela-castro-s/img/blob/master/img1.png?raw=true)
 
 
 y copiar el texto del archivo [calculadora_imaginarios](https://github.com/gabriela-castro-s/Calculadora-imaginarios/blob/master/calculadora_imaginarios.py)
