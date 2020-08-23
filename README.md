@@ -36,12 +36,26 @@ Para poder previsualizar el archivo, puede utilizar cualquier editor de phyton, 
 
 ![alt text](https://github.com/gabriela-castro-s/img/blob/master/img1.png?raw=true)
 
+- Nos vamos al repositorio y seleccionamos el archivo [calculadora_imaginarios](https://github.com/gabriela-castro-s/Calculadora-imaginarios/blob/master/calculadora_imaginarios.py)
 
-y copiar el texto del archivo [calculadora_imaginarios](https://github.com/gabriela-castro-s/Calculadora-imaginarios/blob/master/calculadora_imaginarios.py)
+![alt text](https://github.com/gabriela-castro-s/img/blob/master/img2.png?raw=true)
+
+- Estando en github, seleccionamos la totalidad del archivo y copiamos el contenido
+
+![alt text](https://github.com/gabriela-castro-s/img/blob/master/img3.png?raw=true)
+
+- Posteriormente nos devolvemos al archivo creado en PyCharm y pegamos el texto haciendo clic derecho
+
+![alt text](https://github.com/gabriela-castro-s/img/blob/master/img4.png?raw=true)
+
+- ¡Listo! Puedes usar la libreria y editarla a tu gusto
+
+![alt text](https://github.com/gabriela-castro-s/img/blob/master/img5.png?raw=true)
 
 ## Pre-requisitos 📋
 
-La libreria fue escrita en PyCharm, por lo que cualquier editor de phyton puede abrir la librería.
+La libreria fue escrita en PyCharm, por lo que cualquier editor de phyton puede abrir la librería (Los pasos anteriores pueden ser replicados 
+en cualquier programa que edite archivos .py).
 
 ## Construido con 🛠️
 
