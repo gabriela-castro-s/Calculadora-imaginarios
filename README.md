@@ -30,7 +30,14 @@ Realiza las siguientes operaciones con vectores y matrices:
 
 ## Comenzando 🚀
 
-Para poder previsualizar el archivo, puede utilizar cualquier editor de phyton y copiar el texto del archivo [calculadora_imaginarios](https://github.com/gabriela-castro-s/Calculadora-imaginarios/blob/master/calculadora_imaginarios.py)
+Para poder previsualizar el archivo, puede utilizar cualquier editor de phyton, por ejemplo:
+
+- Abrimos PyCharm y creamos un nuevo archivo
+
+![Optional Text](../master/Desktop/img1.png)
+
+
+y copiar el texto del archivo [calculadora_imaginarios](https://github.com/gabriela-castro-s/Calculadora-imaginarios/blob/master/calculadora_imaginarios.py)
 
 ## Pre-requisitos 📋
 
