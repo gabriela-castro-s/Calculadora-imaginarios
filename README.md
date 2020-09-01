@@ -56,8 +56,8 @@ Si deseas clonar el repositorio, haz clic [aquí](https://desarrolloweb.com/arti
 
 ## Pre-requisitos 📋
 
-La libreria fue escrita en PyCharm, por lo que cualquier editor de phyton puede abrir la librería (Los pasos anteriores pueden ser replicados 
-en cualquier programa que edite archivos .py).
+La libreria fue escrita en PyCharm, por lo que cualquier editor de phyton3 puede abrir la librería (Los pasos anteriores pueden ser replicados 
+en cualquier programa que edite archivos .py
 
 ## Construido con 🛠️
 
