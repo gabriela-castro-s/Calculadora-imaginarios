@@ -52,6 +52,8 @@ Para poder previsualizar el archivo, puede utilizar cualquier editor de phyton, 
 
 ![alt text](https://github.com/gabriela-castro-s/img/blob/master/img5.png?raw=true)
 
+Si deseas clonar el repositorio, haz clic [aquí](https://desarrolloweb.com/articulos/git-clone-clonar-repositorio.html) para obtener una descripción detallada. 
+
 ## Pre-requisitos 📋
 
 La libreria fue escrita en PyCharm, por lo que cualquier editor de phyton puede abrir la librería (Los pasos anteriores pueden ser replicados 
